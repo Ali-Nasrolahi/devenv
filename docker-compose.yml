@@ -1,0 +1,12 @@
+
+name: Develop
+
+services:
+    avr:
+        build:
+            context: ./avr/
+        devices:
+            - /dev/ttyUSB0
+    i686:
+        build:
+            context: ./i686/
